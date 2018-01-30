@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.layout.assig14_3.MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:hint="Enter a message"
+        android:id="@+id/edittext"
+        android:layout_marginTop="0dp"
+        android:layout_weight="2"
+        android:gravity="top"
+        />
+
+    <Button android:onClick="writeMessage"
+        android:id="@+id/button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="WRITE MESSAGE" />
+
+    <Button android:onClick="readMessage"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="READ MESSAGE"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="hello"
+        android:id="@+id/textview"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_weight="1"
+
+
+        />
+</LinearLayout>
+    <!-- A layout that arranges other views either horizontally in a single column or vertically in a single row
+     ID-Any View object may have an integer ID associated with it, to uniquely identify the View within the tree.
+                     When the application is compiled, this ID is referenced as an integer, but the ID is typically assigned in the layout XML file
+                     as a string, in the id attribute.This is an XML attribute common to all View objects (defined by the View class) and you will use
+                     it very often
+                     wrap_content tells your view to size itself to the dimensions required by its content.
+                     match_parent tells your view to become as big as its parent view group will allow.
+                     TextSize will give size of the text-->
